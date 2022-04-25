@@ -65,10 +65,10 @@ WSGI_APPLICATION = 'locallibrary.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'locallibrary_db',
-        'USER': 'aleksey',
-        'PASSWORD': 'Dmesggrepeth1',
-        'HOST': '127.0.0.1',
+        'NAME': 'd97qik19401r3u',
+        'USER': 'wokzaegggjysnb',
+        'PASSWORD': '1d1acedb789ceb3923cb29867e99cdce7d2f283ed34907661b07346cff322ca1',
+        'HOST': 'ec2-3-209-124-113.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
