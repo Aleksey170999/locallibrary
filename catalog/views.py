@@ -25,7 +25,6 @@ def index(request):
     num_visits = request.session.get('num_visits', 0)
     request.session['num_visits'] = num_visits + 1
 
-    num_shakespear_books = Book.objects.filter(author__first_name__startswith='William').count()
     # Отрисовка HTML-шаблона index.html с данными внутри
     # переменной контекста context
     return render(
@@ -35,7 +34,6 @@ def index(request):
                  'num_instances': num_instances,
                  'num_instances_available': num_instances_available,
                  'num_authors': num_authors,
-                 'num_shakespear_books': num_shakespear_books,
                  'num_visits': num_visits},
     )
 
